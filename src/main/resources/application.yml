@@ -8,10 +8,26 @@ logging:
 
 
 langchain4j:
-  open-ai:
-    chat-model:
-      api-key: demo
-      model-name: gpt-4o-mini
-      log-requests: true # 请求日志
-      log-responses: true # 响应日志
-      base-url: http://langchain4j.dev/demo/openai/v1
+  community:
+    dashscope:
+      chat-model:
+        api-key: ${DASH_SCOPE_API_KEY}
+        model-name: qwen-max
+      #  ollama:
+#    chat-model:
+#      base-url: http://localhost:11434
+#  open-ai:
+#    chat-model:
+      # OpenAi
+      # api-key: demo
+      # model-name: gpt-4o-mini
+      # log-requests: true # 请求日志
+      # log-responses: true # 响应日志
+      # base-url: http://langchain4j.dev/demo/openai/v1
+      # DeepSeek
+#      api-key: ${DEEP_SEEK_API_KEY}
+#      model-name: deepseek-chat
+#      log-requests: true # 请求日志
+#      log-responses: true # 响应日志
+#      base-url: https://api.deepseek.com
+

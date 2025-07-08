@@ -13,7 +13,7 @@ public class SeparateChatAssistantConfig {
     public ChatMemoryProvider chatMemoryProvider(){
         return memoryId -> MessageWindowChatMemory.builder()
                 .id(memoryId)
-                .chatMemoryStore(C)
+                //.chatMemoryStore()
                 .maxMessages(10)
                 .build();
     }

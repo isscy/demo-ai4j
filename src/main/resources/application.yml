@@ -15,6 +15,10 @@ langchain4j:
       chat-model:
         api-key: ${DASH_SCOPE_API_KEY}
         model-name: qwen-max
+      # 向量模型
+      embedding-model:
+        api-key: ${DASH_SCOPE_API_KEY}
+        model-name: text-embedding-v3
 
 # Open-ai
 #langchain4j:

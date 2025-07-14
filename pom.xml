@@ -30,11 +30,11 @@
             <scope>test</scope>
         </dependency>
         <!-- 前后端分离中的后端接口测试工具 -->
-         <dependency>
-             <groupId>com.github.xiaoymin</groupId>
-             <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
-             <version>${knife4j.version}</version>
-         </dependency>
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+            <version>${knife4j.version}</version>
+        </dependency>
         <!-- 基于open-ai的langchain4j接口：ChatGPT、deepseek都是open-ai标准下的大模型 -->
         <!--<dependency>
             <groupId>dev.langchain4j</groupId>
@@ -53,6 +53,18 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j-document-parser-apache-pdfbox</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j-easy-rag</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j-pinecone</artifactId>
         </dependency>
     </dependencies>
 

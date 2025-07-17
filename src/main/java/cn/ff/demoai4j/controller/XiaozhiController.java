@@ -30,7 +30,7 @@ public class XiaozhiController {
     }
 
     @Operation(summary = "对话2")
-    @PostMapping("/chat2")
+    @PostMapping(value = "/chat2", produces = "text/stream;charset=utf-8")
     public Flux<String> chat2(@RequestBody ChatForm chatForm) {
         return xiaozhiAgent2.chat(chatForm.getMemoryId(), chatForm.getMessage());
     }

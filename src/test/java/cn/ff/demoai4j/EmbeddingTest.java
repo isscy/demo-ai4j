@@ -93,7 +93,6 @@ public class EmbeddingTest {
                 .build()
                 .ingest(documents);
 
-
     }
 
 

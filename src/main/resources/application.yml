@@ -19,6 +19,10 @@ langchain4j:
       embedding-model:
         api-key: ${DASH_SCOPE_API_KEY}
         model-name: text-embedding-v3
+      # 流式输出
+      streaming-chat-model:
+        api-key: ${DASH_SCOPE_API_KEY}
+        model-name: qwen-plus
 
 # Open-ai
 #langchain4j:
